@@ -557,6 +557,15 @@ READ ALL 67 REVIEWS ON GOOGLE
 <!-- Decorative Background Shape -->
 <div class="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 -translate-y-1/2 -translate-x-1/2 rounded-full blur-3xl"></div>
 </section>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closeLightbox(event)">
+<div class="relative max-w-4xl w-full">
+<img id="lightbox-img" src="" alt="Full size image" class="w-full rounded-lg">
+<button onclick="closeLightbox()" class="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-colors">×</button>
+</div>
+</div>
+
+</section>
 
 <!-- Gallery Section -->
 <section id="gallery" class="bg-surface-container py-16 md:py-24 w-full px-margin-mobile md:px-margin-desktop">
@@ -609,15 +618,6 @@ READ ALL 67 REVIEWS ON GOOGLE
 </div>
 </section>
 
-<!-- Lightbox Modal -->
-<div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closeLightbox(event)">
-<div class="relative max-w-4xl w-full">
-<img id="lightbox-img" src="" alt="Full size image" class="w-full rounded-lg">
-<button onclick="closeLightbox()" class="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-colors">×</button>
-</div>
-</div>
-
-</section>
 </main>
 <!-- Footer -->
 <footer class="bg-deep-slate border-t-4 border-primary py-16 md:py-20 w-full px-margin-mobile md:px-margin-desktop">
