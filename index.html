@@ -213,34 +213,43 @@ VIEW OUR SERVICES
 </div>
 
 <!-- Right Side: Lead Form -->
-<div class="bg-white rounded-lg p-6 shadow-2xl w-full md:w-auto">
-<h3 class="text-deep-slate mb-1 uppercase text-sm font-bold">Get Your Free Quote</h3>
-<p class="text-primary text-xs font-bold mb-4">✓ Free in-home estimate</p>
-<form action="https://formsubmit.co/vallebravoconcrete4U@gmail.com" method="POST" class="space-y-3">
+<div class="bg-white rounded-lg p-8 shadow-2xl w-full md:w-auto">
+<h3 class="text-deep-slate mb-1 uppercase text-lg font-bold">Get Your Free Quote</h3>
+<p class="text-primary text-sm font-bold mb-4">✓ Free in-home estimate</p>
+<form action="https://formsubmit.co/vallebravoconcrete4U@gmail.com" method="POST" class="space-y-4">
 <input type="hidden" name="_subject" value="New Lead — Valle Bravo Concrete Website" />
 <input type="hidden" name="_template" value="table" />
 <input type="hidden" name="_captcha" value="false" />
 <div class="group">
-<label class="text-xs text-deep-slate mb-1 block uppercase font-bold">Name</label>
-<input name="name" required class="w-full border-2 border-primary px-3 py-1.5 focus:border-deep-slate focus:ring-0 transition-colors outline-none rounded text-sm" placeholder="John" type="text"/>
+<label class="font-label-caps text-xs text-secondary mb-2 block uppercase">Your Name</label>
+<input name="name" required class="w-full border-2 border-concrete-gray px-4 py-3 focus:border-primary focus:ring-0 transition-colors outline-none rounded" placeholder="John Doe" type="text"/>
 </div>
 <div class="group">
-<label class="text-xs text-deep-slate mb-1 block uppercase font-bold">Phone</label>
-<input name="phone" required class="w-full border-2 border-primary px-3 py-1.5 focus:border-deep-slate focus:ring-0 transition-colors outline-none rounded text-sm" placeholder="(555) 123-4567" type="tel"/>
+<label class="font-label-caps text-xs text-secondary mb-2 block uppercase">Phone Number</label>
+<input name="phone" required class="w-full border-2 border-concrete-gray px-4 py-3 focus:border-primary focus:ring-0 transition-colors outline-none rounded" placeholder="(555) 123-4567" type="tel"/>
 </div>
 <div class="group">
-<label class="text-xs text-deep-slate mb-1 block uppercase font-bold">Project</label>
-<select name="project_type" class="w-full border-2 border-primary px-3 py-1.5 focus:border-deep-slate focus:ring-0 transition-colors outline-none rounded bg-white text-sm">
-<option>Residential</option>
-<option>Commercial</option>
-<option>Patio</option>
-<option>Driveway</option>
+<label class="font-label-caps text-xs text-secondary mb-2 block uppercase">Project Type (Optional)</label>
+<select name="project_type" class="w-full border-2 border-concrete-gray px-4 py-3 focus:border-primary focus:ring-0 transition-colors outline-none bg-white rounded">
+<option>Residential Concrete</option>
+<option>Commercial Concrete</option>
+<option>Industrial Concrete</option>
+<option>Patios &amp; Porches</option>
+<option>Decks &amp; Driveways</option>
+<option>New Construction</option>
+<option>Other</option>
 </select>
 </div>
-<button type="submit" class="w-full bg-primary text-white font-bold text-sm py-2 hover:bg-deep-slate transition-all uppercase rounded">
-GET QUOTE
+<div class="flex items-start gap-3 bg-yellow-100 p-4 border-l-4 border-yellow-400 rounded">
+<input type="checkbox" id="financing-interest" name="financing_interest" value="yes" class="mt-1 w-4 h-4 accent-primary" />
+<label for="financing-interest" class="text-sm text-deep-slate cursor-pointer">
+<span class="font-bold">Add financing info?</span> We'll include pre-qualification details for $130/mo plans with your quote.
+</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white font-button-text text-button-text py-4 hover:bg-deep-slate transition-all uppercase font-bold rounded">
+GET YOUR FREE QUOTE
 </button>
-<p class="text-center text-xs text-primary mt-2"><a href="tel:5599039531" class="font-bold hover:underline">(559) 903-9531</a></p>
+<p class="text-center text-xs text-secondary">💬 Prefer to call? <a href="tel:5599039531" class="text-primary font-bold">(559) 903-9531</a></p>
 </form>
 </div>
 </div>
