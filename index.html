@@ -153,6 +153,12 @@ src="https://www.facebook.com/tr?id=2182303559260477&ev=PageView&noscript=1"
 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#financing">Financing</a>
 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#gallery">Gallery</a>
 </nav>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 z-50" aria-label="Toggle menu">
+<span class="w-6 h-0.5 bg-deep-slate block"></span>
+<span class="w-6 h-0.5 bg-deep-slate block"></span>
+<span class="w-6 h-0.5 bg-deep-slate block"></span>
+</button>
 <div class="flex gap-2 md:gap-4">
 <a class="flex items-center gap-2 font-button-text text-[12px] md:text-button-text text-on-surface border-2 border-deep-slate px-3 md:px-6 py-2 md:py-3 hover:bg-deep-slate hover:text-white transition-all whitespace-nowrap" href="tel:5599039531">
 <span class="material-symbols-outlined text-[16px] md:text-[18px]">call</span>
@@ -163,6 +169,18 @@ src="https://www.facebook.com/tr?id=2182303559260477&ev=PageView&noscript=1"
             </a>
 </div>
 </header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 right-0 bg-white shadow-lg z-40">
+<nav class="flex flex-col gap-0">
+<a class="font-body-md text-body-md text-primary font-bold px-6 py-4 border-b border-concrete-gray hover:bg-surface-container transition-colors" href="#services">Services</a>
+<a class="font-body-md text-body-md text-secondary px-6 py-4 border-b border-concrete-gray hover:bg-surface-container hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
+<a class="font-body-md text-body-md text-secondary px-6 py-4 border-b border-concrete-gray hover:bg-surface-container hover:text-primary transition-colors" href="#financing">Financing</a>
+<a class="font-body-md text-body-md text-secondary px-6 py-4 border-b border-concrete-gray hover:bg-surface-container hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="font-body-md text-body-md text-secondary px-6 py-4 hover:bg-surface-container hover:text-primary transition-colors" href="#estimate">Contact</a>
+</nav>
+</div>
+
 <main>
 <!-- Sticky Mobile CTA Button -->
 <a href="https://app.gethearth.com/financing/37015/62530/prequalify?utm_campaign=37015&utm_content=darkblu&utm_medium=contractor-website&utm_source=contractor&utm_term=62530e" target="_blank" rel="noopener noreferrer" class="md:hidden fixed bottom-4 left-4 right-4 z-40 bg-yellow-400 text-deep-slate font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-300 transition-all text-center text-sm uppercase tracking-wide block">
@@ -880,6 +898,22 @@ PRE-QUALIFY NOW
                 header.classList.remove('shadow-lg', 'py-2');
                 header.classList.add('py-4');
             }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 </body></html>
