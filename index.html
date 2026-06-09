@@ -143,14 +143,18 @@ src="https://www.facebook.com/tr?id=2182303559260477&ev=PageView&noscript=1"
 </div>
 </a>
 <!-- Mobile Hamburger Bar -->
-<div class="md:hidden bg-black px-4 py-3 flex justify-between items-center">
-<span class="text-white text-sm font-bold">Menu</span>
-<button id="mobile-menu-btn" class="flex flex-col gap-1.5 cursor-pointer" aria-label="Toggle menu" style="display: flex !important;">
-<span class="w-6 h-1 bg-white block"></span>
-<span class="w-6 h-1 bg-white block"></span>
-<span class="w-6 h-1 bg-white block"></span>
+<div id="hamburger-bar" style="display: none; background: black; padding: 12px 16px; text-align: right;">
+<button id="mobile-menu-btn" style="background: none; border: none; cursor: pointer; padding: 8px;">
+<span style="display: block; width: 24px; height: 3px; background: white; margin: 5px 0;"></span>
+<span style="display: block; width: 24px; height: 3px; background: white; margin: 5px 0;"></span>
+<span style="display: block; width: 24px; height: 3px; background: white; margin: 5px 0;"></span>
 </button>
 </div>
+<script>
+if (window.innerWidth < 768) {
+  document.getElementById('hamburger-bar').style.display = 'block';
+}
+</script>
 <!-- Top Navigation -->
 <header class="flex bg-white/10 backdrop-blur sticky top-0 z-50 border-b border-white/20 justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4">
 <a href="/" class="flex items-center gap-4 hover:opacity-80 transition-opacity" aria-label="Valle Bravo Concrete home">
@@ -162,12 +166,6 @@ src="https://www.facebook.com/tr?id=2182303559260477&ev=PageView&noscript=1"
 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#financing">Financing</a>
 <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#gallery">Gallery</a>
 </nav>
-<!-- Mobile Menu Button -->
-<button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 z-50 p-2" aria-label="Toggle menu" style="display: flex !important; flex-direction: column; gap: 6px;">
-<span class="w-6 h-0.5 bg-deep-slate block"></span>
-<span class="w-6 h-0.5 bg-deep-slate block"></span>
-<span class="w-6 h-0.5 bg-deep-slate block"></span>
-</button>
 <div class="flex gap-2 md:gap-4">
 <a class="flex items-center gap-2 font-button-text text-[12px] md:text-button-text text-on-surface border-2 border-deep-slate px-3 md:px-6 py-2 md:py-3 hover:bg-deep-slate hover:text-white transition-all whitespace-nowrap" href="tel:5599039531">
 <span class="material-symbols-outlined text-[16px] md:text-[18px]">call</span>
